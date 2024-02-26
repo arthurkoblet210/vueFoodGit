@@ -14,12 +14,14 @@ export default class Module {
     this.state = (typeof rawState === 'function' ? rawState() : rawState) || {}
   }
 
-  get namespaced () {
-    return !!this._rawModule.namespaced
-  }
+  
 
   addChild (key, module) {
     this._children[key] = module
+  }
+
+  get namespaced () {
+    return !!this._rawModule.namespaced
   }
 
   removeChild (key) {
