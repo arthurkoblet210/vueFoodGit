@@ -1,10 +1,11 @@
 import { setupDevtoolsPlugin } from '@vue/devtools-api'
 import { makeLocalGetters } from '../store-util'
 
-const LABEL_VUEX_BINDINGS = 'vuex bindings'
-const MUTATIONS_LAYER_ID = 'vuex:mutations'
+
 const ACTIONS_LAYER_ID = 'vuex:actions'
 const INSPECTOR_ID = 'vuex'
+const LABEL_VUEX_BINDINGS = 'vuex bindings'
+const MUTATIONS_LAYER_ID = 'vuex:mutations'
 
 let actionId = 0
 
